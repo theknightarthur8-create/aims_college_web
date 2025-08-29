@@ -1,0 +1,142 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>AIMS Degree College</title>
+  <meta name="description" content="A modern, student-friendly website for AIMS Degree College" />
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" integrity="sha512-1xQZrJcR6tS7m4JqM0uW0f0+Xu7XQ2vG0mV2sV3d8vF6qE7kZs7wA9P9Gv8D7v6C4jVtZ1jZl6bG4w3Fj6l7w==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <link rel="stylesheet" href="style.css" />
+</head>
+
+<body>
+  <header class="site-header">
+    <nav class="navbar container">
+      <a class="brand" href="index.html">
+        <img src="assets/logo.jpg" alt="AIMS Degree College Logo" class="logo" />
+        <span class="brand-text">AIMS Degree College</span>
+      </a>
+      <button class="hamburger" aria-label="Toggle menu" aria-expanded="false">
+        <span></span><span></span><span></span>
+      </button>
+      <ul class="nav-links">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="about.html">About</a></li>
+        <li><a href="courses.html">Courses</a></li>
+        <li><a href="admissions.html">Admissions</a></li>
+        <li><a href="gallery.html">Gallery</a></li>
+        <li><a href="contact.html">Contact</a></li>
+      </ul>
+    </nav>
+  </header>
+  
+  <main class="page container">
+    <section class="page-hero">
+      <h1>Admissions</h1>
+      <p>Join a community built for curious minds and ambitious careers.</p>
+    </section>
+    
+    <section class="two-col">
+      <div>
+        <h2>Admission Procedure</h2>
+        <ol class="steps">
+          <li>Fill out the enquiry form below to receive a callback.</li>
+          <li>Submit your application with required documents.</li>
+          <li>Appear for counseling and eligibility verification.</li>
+          <li>Confirm admission by paying the initial fee.</li>
+        </ol>
+        <a class="btn primary" href="assets/prospectus.pdf" download>Download Prospectus</a>
+      </div>
+      <div>
+        <h2>Eligibility</h2>
+        <ul class="checklist">
+          <li>Completion of 10+2 or equivalent from a recognized board.</li>
+          <li>Minimum aggregate as per program requirements.</li>
+          <li>Documents: Marksheets, ID proof, photographs.</li>
+        </ul>
+      </div>
+    </section>
+    
+    <section class="form-section">
+      <h2>Enquiry Form</h2>
+      <form id="enquiryForm">
+        <div class="form-grid">
+          <div class="form-control">
+            <label for="enqName">Full Name</label>
+            <input type="text" id="enqName" name="name" placeholder="Your name" required />
+          </div>
+          <div class="form-control">
+            <label for="enqEmail">Email</label>
+            <input type="email" id="enqEmail" name="email" placeholder="you@example.com" required />
+          </div>
+          <div class="form-control">
+            <label for="enqPhone">Phone</label>
+            <input type="tel" id="enqPhone" name="phone" placeholder="+91 " required />
+          </div>
+          <div class="form-control">
+            <label for="enqCourse">Interested Course</label>
+            <select id="enqCourse" name="course" required>
+              <option value="">Select a course</option>
+              <option>B.Com</option>
+              <option>B.Sc</option>
+              <option>BBA</option>
+              <option>BCA</option>
+            </select>
+          </div>
+          <div class="form-control full">
+            <label for="enqMsg">Message</label>
+            <textarea id="enqMsg" name="message" rows="4" placeholder="Your questions"></textarea>
+          </div>
+        </div>
+        <button type="submit" class="btn primary">Submit</button>
+        <p id="enquirySuccess" class="form-success" hidden>Thank you! We’ll contact you shortly.</p>
+      </form>
+    </section>
+  </main>
+  
+  <footer class="site-footer">
+    <div class="container footer-grid">
+      <div>
+        <div class="footer-brand">
+          <img src="assets/logo.jpg" alt="AIMS Degree College Logo" class="logo small" />
+          <h3>AIMS Degree College</h3>
+        </div>
+        <p class="muted">Shaping futures with academic excellence, industry exposure, and a vibrant campus life.</p>
+      </div>
+      <div>
+        <h4>Quick Links</h4>
+        <ul class="footer-links">
+          <li><a href="about.html">About</a></li>
+          <li><a href="courses.html">Courses</a></li>
+          <li><a href="admissions.html">Admissions</a></li>
+          <li><a href="gallery.html">Gallery</a></li>
+          <li><a href="contact.html">Contact</a></li>
+          <li><a href="assets/prospectus.pdf" download>Prospectus</a></li>
+        </ul>
+      </div>
+      <div>
+        <h4>Connect</h4>
+        <div class="socials">
+          <a aria-label="Instagram" href="https://www.instagram.com/aimsdegree_official?igsh=MWs0ODVidnNvOGKzeg==" target="_blank" rel="noopener"><b>INSTAGRAM</b><i class="fab fa-instagram"></i></a>
+          <a aria-label="FACEBOOK" href="https://www.facbook.com/share/1CRmySzpr4/" target="_blank" rel="noopener"><i class="fab fa-linkedin"><b>FACEBOOK</b></i></a>
+          <a aria-label="YouTube" href="https://www.youtube.com/@AimsDegreeCollege" target="_blank" rel="noopener"><i class="fab fa-youtube"><b>YOUTUBE</b></i></a>
+        </div>
+      </div>
+    </div>
+    <div class="copyright"><p>© <span id="year"></span> AIMS Degree College. All rights reserved.<br>
+      | Project design by ADNAN,FAHAD,NISAR,JAFFAR |</p>
+    </div>
+  </footer>
+  <script>src="/script.js"</script>
+  <script type="text/javascript">emailjs.init("FIm2wrr4ViLo2-_DE")</script>
+  <!-- EmailJS SDK -->
+  <script src="https://cdn.jsdelivr.net/npm/emailjs-com@3/dist/email.min.js"></script>
+  <!-- External JS file -->
+  <script src="enquiry.js"></script>
+</body>
+
+</html>
